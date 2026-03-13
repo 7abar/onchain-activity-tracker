@@ -1,0 +1,25 @@
+{
+  "name": "onchain-activity-tracker",
+  "version": "1.0.0",
+  "description": "CLI tool to track and label onchain wallet activity on Base / EVM chains",
+  "type": "module",
+  "bin": {
+    "track": "./src/cli.js"
+  },
+  "scripts": {
+    "start": "node --experimental-vm-modules src/cli.js",
+    "dev": "node --watch src/cli.js",
+    "test": "vitest run"
+  },
+  "keywords": ["ethereum", "base", "wallet", "tracker", "cli", "web3", "onchain"],
+  "author": "7abar",
+  "license": "MIT",
+  "dependencies": {
+    "viem": "^2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0",
+    "@types/node": "^20.0.0"
+  }
+}
